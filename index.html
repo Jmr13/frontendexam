@@ -7,25 +7,28 @@
 </head>
 <body class="text-gray-900">
   
-  <nav class="flex justify-between items-center mt-10 mb-16 px-20">
-    <img src="https://dummyimage.com/250x50/000/fff" alt="Logo" />
-    <div class="flex justify-end grow">
-      <button type="button" class="text-white bg-zaffre rounded-md border-cobalt border-b-4 px-6 py-2 mr-5">Sign up</button>
+  <nav class="flex flex-col lg:flex-row gap gap-y-5 justify-center lg:justify-between items-center mt-10 mb-16 px-2 md:px-14 lg:pl-10 lg:pr-20">
+    <div class="flex w-full lg:w-auto justify-between">
+      <img src="https://dummyimage.com/250x30/000/fff" alt="Logo" />
+      <p class="lg:hidden text-white py-2 px-3 bg-zaffre rounded-md text-center">&#9776;</p>
+    </div>
+    <div class="flex flex-col lg:flex-row gap gap-x-3 gap-y-3 justify-center lg:justify-end w-full">
+      <button type="button" class="text-white bg-zaffre rounded-md border-cobalt border-b-4 px-6 py-2">Sign up</button>
       <button type="button" class="text-gray-500 rounded-md border-gray-300 border-2 px-6 py-2">Log in</button>
     </div>
   </nav>
   
-  <main class="flex pr-20 pl-40 pb-10">
-    <section class="grow">
-      <h1 class="text-7xl font-bold mb-7">
+  <main class="flex flex-col-reverse md:flex-row justify-center lg:justify-between items-center md:items-start mt-10 mb-16 px-2 md:px-14 py-10 lg:px-20">
+    <section class="w-full md:w-1/2 text-center md:text-justify pr-3">
+      <h1 class="text-4xl lg:text-7xl font-bold mb-7">
         Make <br />
         Learning fun!
       </h1>
-      <p class="text-gray-500 mb-10 text-xl">
+      <p class="text-gray-500 mb-10 text-md lg:text-xl">
         Any subject, in any language, on any <br />
         device, for all ages!
       </p>
-      <button type="button" class="font-bold text-white bg-zaffre rounded-md px-14 py-4 mb-10">
+      <button type="button" class="font-bold text-white bg-zaffre rounded-md w-full md:w-auto px-6 py-2 lg:px-14 lg:py-4 mb-10">
         Sign up for free
       </button>
       <p class="mb-3 text-sm font-bold">
@@ -36,74 +39,79 @@
         <button type="button">Google play</button>
       </div>
     </section>
-    <aside>
-      <img src="https://dummyimage.com/450x350/000/fff" alt="HeroImg" class="object-cover">
+    <aside class="w-full md:w-1/2">
+      <img src="https://dummyimage.com/450x480/000/fff" alt="HeroImg" class="object-cover">
     </aside>
   </main>
   
-  <div class="flex flex-col pr-20 pl-40 py-10 bg-gray-300">
-    <div class="flex flex-col text-center">
-      <h3 class="text-3xl font-bold mb-2">Who is Kurtis for?</h3>
-      <hr class="bg-zaffre h-2 w-24 self-center mb-14"/>
+  <div class="flex flex-col mt-10 mb-16 px-2 md:px-14 py-10 lg:px-20 w-full bg-gray-100">
+    <h3 class="text-3xl font-bold mb-2 self-center">Who is Kurtis for?</h3>
+    <hr class="bg-zaffre h-2 w-24 self-center mb-14"/>
+    
+    <div class="flex flex-wrap justify-between space-y-5 md:space-y-0 lg:space-x-5 mb-10">
       
-      <div class="flex justify-between">
-        
-        <div class="flex flex-col text-start">
-          <div class="mb-5 grow">
-            <img src="https://dummyimage.com/40x40/000/fff" alt="icon">
-          </div>
-          <h3 class="text-lg font-bold mb-2">At School</h3>
-          <p class="whitespace-pre mb-3">Engaging group and
-distance learning for 
-teachers and students.
-          </p>
-          <p class="text-gray-700 font-bold">Learn more</p>
+      <div class="flex flex-col text-center md:text-start w-full md:w-1/2 lg:w-1/5">
+        <div class="mb-5 grow self-center">
+          <img src="https://dummyimage.com/40x40/000/fff" alt="icon">
         </div>
-        
-        <div class="flex flex-col text-start">
-          <div class="mb-5 grow">
-            <img src="https://dummyimage.com/40x40/000/fff" alt="icon">
-          </div>
-          <h3 class="text-lg font-bold mb-3">At Work</h3>
-          <p class="whitespace-pre mb-3">For training, e-learning, 
-interactive presentations, 
-and more.
-          </p>
-          <p class="text-gray-700 font-bold">Learn more</p>
+        <h3 class="text-lg font-bold mb-2">At School</h3>
+        <p class="mb-5">
+          Engaging group and <br />
+          distance learning for <br />
+          teachers and students.
+        </p>
+        <p class="text-gray-700 font-bold">Learn more</p>
+      </div>
+      
+      <div class="flex flex-col text-center md:text-start w-full md:w-1/2 lg:w-1/5">
+        <div class="mb-5 grow self-center">
+          <img src="https://dummyimage.com/40x40/000/fff" alt="icon">
         </div>
-        
-        <div class="flex flex-col text-start">
-          <div class="mb-5 grow">
-            <img src="https://dummyimage.com/40x40/000/fff" alt="icon">
-          </div>
-          <h3 class="text-lg font-bold mb-3">At home</h3>
-          <p class="whitespace-pre mb-3">Apps and games for 
-family fun or home 
-study.
-          </p>
-          <p class="text-gray-700 font-bold">Learn more</p>
+        <h3 class="text-lg font-bold mb-2">At work</h3>
+        <p class="mb-5">
+          For training, e-learning, <br />
+          interactive presentations <br />
+          and more.
+        </p>
+        <p class="text-gray-700 font-bold">Learn more</p>
+      </div>
+      
+      <div class="flex flex-col text-center lg:text-start w-full md:w-1/2 lg:w-1/5">
+        <div class="mb-5 grow self-center">
+          <img src="https://dummyimage.com/40x40/000/fff" alt="icon">
         </div>
-        
-        <div class="flex flex-col text-start">
-          <div class="mb-5 grow">
-            <img src="https://dummyimage.com/40x40/000/fff" alt="icon">
-          </div>
-          <h3 class="text-lg font-bold mb-3">Learning apps</h3>
-          <p class="whitespace-pre mb-3">Engage kids with the 
-Kahoot! family of 
-learning apps
-          </p>
-          <p class="text-gray-700 font-bold">Learn more</p>
+        <h3 class="text-lg font-bold mb-2">At home</h3>
+        <p class="mb-5">
+          Apps and games for <br />
+          family fun or home <br />
+          study.
+        </p>
+        <p class="text-gray-700 font-bold">Learn more</p>
+      </div>
+      
+      <div class="flex flex-col text-center lg:text-start w-full md:w-1/2 lg:w-1/5">
+        <div class="mb-5 grow self-center">
+          <img src="https://dummyimage.com/40x40/000/fff" alt="icon">
         </div>
-        
+        <h3 class="text-lg font-bold mb-2">Learning apps</h3>
+        <p class="mb-5">
+          Engage kids with the <br />
+          Kahoot! family of <br />
+          learning apps.
+        </p>
+        <p class="text-gray-700 font-bold">Learn more</p>
       </div>
       
     </div>
+    
+    <div class="flex justify-center">
+      <button type="button" class="text-white bg-zaffre rounded-md font-bold border-cobalt border-b-4 w-full md:w-auto px-6 py-2">SIGN UP NOW</button>
+    </div>
   </div>
   
-  <div class="flex justify-center items-center px-40 py-60 bg-saffron">
+  <div class="flex justify-center items-center px-2 py-60 lg:px-40 bg-saffron">
     <div class="flex flex-col justify-between">
-      <img src="https://dummyimage.com/100x50/000/fff" alt="Logo" class="mb-10"/>
+      <img src="https://dummyimage.com/250x50/000/fff" alt="Logo" class="mb-10"/>
       <div class="flex rounded-full bg-white mb-3">
         <input type="text" name="code" id="code" placeholder="Write the code here" class="pl-6 py-4 grow rounded-tl-full rounded-bl-full text-xl placeholder:text-gray-600 placeholder:font-bold"/>
         <div>
@@ -114,16 +122,16 @@ learning apps
     </div>
   </div>
   
-  <div class="flex flex-col pr-20 pl-40 py-10">
-    <h1 class="text-center text-3xl mb-20">Still more? <span class="font-bold underline text-blue-700">Take a look to our feature games</span></h1>
+  <div class="flex flex-col px-2 md:px-14 py-10 lg:px-20">
+    <h1 class="text-center text-lg lg:text-3xl mb-20">Still more? <span class="font-bold underline text-blue-700">Take a look to our feature games</span></h1>
     <h3 class="text-3xl text-center font-bold mb-2">How does Kurtis work?</h3>
     <hr class="bg-zaffre h-2 w-24 self-center mb-14"/>
     
-    <div class="flex justify-between mb-16">
-      <div>
-        <img src="https://dummyimage.com/400x400/000/fff" alt="Illustration" class="object-cover">
+    <div class="flex flex-col lg:flex-row justify-between mb-16">
+      <div class="flex w-full lg:w-1/2">
+        <img src="https://dummyimage.com/450x450/000/fff" alt="Illustration" class="object-cover">
       </div>
-      <div class="grow px-10 py-8">
+      <div class="w-full lg:w-1/2 px-10 py-8">
         <h1 class="text-3xl font-bold mb-2">Create</h1>
         <p>
           It only takes minutes to create a <br />
@@ -133,8 +141,8 @@ learning apps
       </div>
     </div>
     
-    <div class="flex justify-between mb-16">
-      <div class="grow px-10 py-8">
+    <div class="flex flex-col-reverse lg:flex-row justify-between mb-16">
+      <div class="w-full lg:w-1/2 px-10 py-8">
         <h1 class="text-3xl font-bold mb-2">Host or share</h1>
         <p>
           Host a live game with questions <br />
@@ -142,16 +150,16 @@ learning apps
           with remote players
         </p>
       </div>
-      <div>
-        <img src="https://dummyimage.com/400x400/000/fff" alt="Illustration" class="object-cover">
+      <div class="flex justify-end w-full lg:w-1/2">
+        <img src="https://dummyimage.com/450x450/000/fff" alt="Illustration" class="object-cover">
       </div>
     </div>
     
-    <div class="flex justify-between mb-16">
-      <div>
-        <img src="https://dummyimage.com/400x400/000/fff" alt="Illustration" class="object-cover">
+    <div class="flex flex-col lg:flex-row justify-between mb-16">
+      <div class="w-full lg:w-1/2">
+        <img src="https://dummyimage.com/450x450/000/fff" alt="Illustration" class="object-cover">
       </div>
-      <div class="grow px-10 py-8">
+      <div class="w-full lg:w-1/2 px-10 py-8">
         <h1 class="text-3xl font-bold mb-2">Play</h1>
         <p>
           Game on! Join a kahoot with a <br />
@@ -162,36 +170,118 @@ learning apps
     </div>
   </div>
   
-  <div class="flex justify-between pr-20 pl-40 pb-10">
-    <p class="border-violet-300 border-l-4 pl-2 font-bold">
+  <div class="flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0 px-2 md:px-14 py-10 lg:px-20 mb-10">
+    <p class="w-full md:w-auto border-zaffre border-l-4 px-4 py-2 text-xs font-bold">
       More than 50% of US <br />
       teachers use Kurtis
     </p>
-    <p class="border-violet-300 border-l-4 pl-2 font-bold">
+    <p class="w-full md:w-auto border-cyan-500 border-l-4 px-4 py-2 text-xs font-bold">
       Players in more than <br />
       200 countries
     </p>
-    <p class="border-violet-300 border-l-4 pl-2 font-bold">
+    <p class="w-full md:w-auto border-red-500 border-l-4 px-4 py-2 text-xs font-bold">
       Over 30 million public <br />
       games available
     </p>
-    <p class="border-violet-300 border-l-4 pl-2 font-bold">
+    <p class="w-full md:w-auto border-yellow-500 border-l-4 px-4 py-2 text-xs font-bold">
       97% of the Fortune <br />
       500 use Kurtis
     </p>
   </div>
   
-  <div class="flex pr-20 pl-40 py-10 bg-gray-300">
-    <div class="flex justify-between mb-16">
-      <div>
-        <img src="https://dummyimage.com/400x400/000/fff" alt="Illustration" class="object-cover">
-      </div>
-      <div class="grow px-10 py-8">
-        <h1 class="text-5xl font-bold mb-8">Ready for make learning fun!</h1>
-        <button type="button" class="text-white bg-zaffre rounded-md border-cobalt border-b-4 px-6 py-2 mr-5">Sign up for free</button>
-      </div>
+  <div class="flex flex-col lg:flex-row px-2 md:px-14 py-10 lg:px-20">
+    <div class="flex justify-center w-full lg:w-1/2">
+      <img src="https://dummyimage.com/450x450/000/fff" alt="Illustration" class="object-cover">
+    </div>
+    <div class="w-full lg:w-1/2 lg:px-10 py-8 text-center lg:text-start">
+      <h1 class="text-6xl font-bold mb-8">Ready for make learning fun!</h1>
+      <button type="button" class="text-white bg-zaffre rounded-md border-cobalt border-b-4 w-full md:w-auto px-6 py-2 mr-5">Sign up for free</button>
     </div>
   </div>
   
+  <footer class="flex flex-col md:flex-row flex-wrap justify-around px-2 py-10 lg:px-20 space-y-8 lg:space-y-0 bg-zaffre text-white">
+    
+    <div class="flex flex-col w-full lg:w-1/5">
+      <div class="flex justify-center lg:justify-start mb-14">
+        <img src="https://dummyimage.com/100x50/000/fff" alt="Logo" class="object-cover"/>
+      </div>
+      <div class="mb-14">
+        <p class="font-bold text-sm mb-3 text-center lg:text-start">Get the app:</p>
+        <div class="flex flex-wrap justify-center lg:justify-start">
+          <img src="https://dummyimage.com/60x30/000/fff" alt="Logo" class="object-contain"/>
+          <img src="https://dummyimage.com/60x30/000/fff" alt="Logo" class="object-contain ml-2" />
+          <img src="https://dummyimage.com/60x30/000/fff" alt="Logo" class="object-contain ml-2" />
+        </div>
+      </div>
+      <div>
+        <p class="font-bold text-sm mb-3 text-center lg:text-start">Follow us:</p>
+        <div class="flex flex-wrap justify-center lg:justify-start space-x-3">
+          <div class="bg-white rounded-full p-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M6.94048 4.99993C6.94011 5.81424 6.44608 6.54702 5.69134 6.85273C4.9366 7.15845 4.07187 6.97605 3.5049 6.39155C2.93793 5.80704 2.78195 4.93715 3.1105 4.19207C3.43906 3.44699 4.18654 2.9755 5.00048 2.99993C6.08155 3.03238 6.94097 3.91837 6.94048 4.99993ZM7.00048 8.47993H3.00048V20.9999H7.00048V8.47993ZM13.3205 8.47993H9.34048V20.9999H13.2805V14.4299C13.2805 10.7699 18.0505 10.4299 18.0505 14.4299V20.9999H22.0005V13.0699C22.0005 6.89993 14.9405 7.12993 13.2805 10.1599L13.3205 8.47993Z"></path></svg>
+          </div>
+          <div class="bg-white rounded-full p-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z"></path></svg>       
+          </div>
+          <div class="bg-white rounded-full p-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M12.001 9C10.3436 9 9.00098 10.3431 9.00098 12C9.00098 13.6573 10.3441 15 12.001 15C13.6583 15 15.001 13.6569 15.001 12C15.001 10.3427 13.6579 9 12.001 9ZM12.001 7C14.7614 7 17.001 9.2371 17.001 12C17.001 14.7605 14.7639 17 12.001 17C9.24051 17 7.00098 14.7629 7.00098 12C7.00098 9.23953 9.23808 7 12.001 7ZM18.501 6.74915C18.501 7.43926 17.9402 7.99917 17.251 7.99917C16.5609 7.99917 16.001 7.4384 16.001 6.74915C16.001 6.0599 16.5617 5.5 17.251 5.5C17.9393 5.49913 18.501 6.0599 18.501 6.74915ZM12.001 4C9.5265 4 9.12318 4.00655 7.97227 4.0578C7.18815 4.09461 6.66253 4.20007 6.17416 4.38967C5.74016 4.55799 5.42709 4.75898 5.09352 5.09255C4.75867 5.4274 4.55804 5.73963 4.3904 6.17383C4.20036 6.66332 4.09493 7.18811 4.05878 7.97115C4.00703 9.0752 4.00098 9.46105 4.00098 12C4.00098 14.4745 4.00753 14.8778 4.05877 16.0286C4.0956 16.8124 4.2012 17.3388 4.39034 17.826C4.5591 18.2606 4.7605 18.5744 5.09246 18.9064C5.42863 19.2421 5.74179 19.4434 6.17187 19.6094C6.66619 19.8005 7.19148 19.9061 7.97212 19.9422C9.07618 19.9939 9.46203 20 12.001 20C14.4755 20 14.8788 19.9934 16.0296 19.9422C16.8117 19.9055 17.3385 19.7996 17.827 19.6106C18.2604 19.4423 18.5752 19.2402 18.9074 18.9085C19.2436 18.5718 19.4445 18.2594 19.6107 17.8283C19.8013 17.3358 19.9071 16.8098 19.9432 16.0289C19.9949 14.9248 20.001 14.5389 20.001 12C20.001 9.52552 19.9944 9.12221 19.9432 7.97137C19.9064 7.18906 19.8005 6.66149 19.6113 6.17318C19.4434 5.74038 19.2417 5.42635 18.9084 5.09255C18.573 4.75715 18.2616 4.55693 17.8271 4.38942C17.338 4.19954 16.8124 4.09396 16.0298 4.05781C14.9258 4.00605 14.5399 4 12.001 4ZM12.001 2C14.7176 2 15.0568 2.01 16.1235 2.06C17.1876 2.10917 17.9135 2.2775 18.551 2.525C19.2101 2.77917 19.7668 3.1225 20.3226 3.67833C20.8776 4.23417 21.221 4.7925 21.476 5.45C21.7226 6.08667 21.891 6.81333 21.941 7.8775C21.9885 8.94417 22.001 9.28333 22.001 12C22.001 14.7167 21.991 15.0558 21.941 16.1225C21.8918 17.1867 21.7226 17.9125 21.476 18.55C21.2218 19.2092 20.8776 19.7658 20.3226 20.3217C19.7668 20.8767 19.2076 21.22 18.551 21.475C17.9135 21.7217 17.1876 21.89 16.1235 21.94C15.0568 21.9875 14.7176 22 12.001 22C9.28431 22 8.94514 21.99 7.87848 21.94C6.81431 21.8908 6.08931 21.7217 5.45098 21.475C4.79264 21.2208 4.23514 20.8767 3.67931 20.3217C3.12348 19.7658 2.78098 19.2067 2.52598 18.55C2.27848 17.9125 2.11098 17.1867 2.06098 16.1225C2.01348 15.0558 2.00098 14.7167 2.00098 12C2.00098 9.28333 2.01098 8.94417 2.06098 7.8775C2.11014 6.8125 2.27848 6.0875 2.52598 5.45C2.78014 4.79167 3.12348 4.23417 3.67931 3.67833C4.23514 3.1225 4.79348 2.78 5.45098 2.525C6.08848 2.2775 6.81348 2.11 7.87848 2.06C8.94514 2.0125 9.28431 2 12.001 2Z"></path></svg>
+          </div>
+          <div class="bg-white rounded-full p-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M15.3499 5.5498C13.7681 5.5498 12.4786 6.81785 12.4504 8.39633L12.4223 9.97138C12.4164 10.3027 12.143 10.5665 11.8117 10.5606C11.7881 10.5602 11.7646 10.5584 11.7413 10.5552L10.1805 10.3423C8.12699 10.0623 6.15883 9.11711 4.27072 7.54387C3.67275 10.8535 4.84 13.147 7.65342 14.9157L9.40041 16.014C9.68095 16.1904 9.7654 16.5608 9.58903 16.8413C9.54861 16.9056 9.49636 16.9616 9.43504 17.0064L7.84338 18.1693C8.78973 18.2288 9.68938 18.1873 10.435 18.0385C15.1526 17.097 18.2897 13.5468 18.2897 7.69084C18.2897 7.21275 17.2774 5.5498 15.3499 5.5498ZM10.4507 8.36066C10.4983 5.69559 12.6735 3.5498 15.3499 3.5498C16.7132 3.5498 17.9465 4.10658 18.8348 5.00515C19.5462 4.9998 20.1514 5.17966 21.5035 4.35943C21.1693 5.9998 21.0034 6.71177 20.2897 7.69084C20.2897 15.3324 15.5926 19.0487 10.8264 19.9998C7.5587 20.6519 2.80646 19.5812 1.44531 18.1584C2.13874 18.1051 4.95928 17.8018 6.58895 16.6089C5.20994 15.6984 -0.278631 12.4679 3.32772 3.78617C5.02119 5.76283 6.73797 7.10831 8.47807 7.82262C9.63548 8.29774 9.91978 8.28825 10.4507 8.36066Z"></path></svg>
+          </div>
+          <div class="bg-white rounded-full p-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="12" height="12"><path d="M16 8.24537V15.5C16 19.0899 13.0899 22 9.5 22C5.91015 22 3 19.0899 3 15.5C3 11.9101 5.91015 9 9.5 9C10.0163 9 10.5185 9.06019 11 9.17393V12.3368C10.5454 12.1208 10.0368 12 9.5 12C7.567 12 6 13.567 6 15.5C6 17.433 7.567 19 9.5 19C11.433 19 13 17.433 13 15.5V2H16C16 4.76142 18.2386 7 21 7V10C19.1081 10 17.3696 9.34328 16 8.24537Z"></path></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="flex flex-col w-full md:w-1/3 lg:w-1/5 text-center lg:text-start lg:pl-16">
+      <h4 class="font-bold text-lg mb-5">About</h4>
+      <div class="grid gap-y-4">
+        <p class="text-sm">Company</p>
+        <p class="text-sm">Leadership</p>
+        <p class="text-sm">Jobs - HIRING!</p>
+        <p class="text-sm">Pricing</p>
+        <p class="text-sm">Press</p>
+        <p class="text-sm">Investors</p>
+      </div>
+    </div>
+    
+    <div class="flex flex-col w-full md:w-1/3 lg:w-1/5 text-center lg:text-start lg:pl-16">
+      <h4 class="font-bold text-lg mb-5">Solutions</h4>
+      <div class="grid gap-y-4">
+        <p class="text-sm">At School</p>
+        <p class="text-sm">At Work</p>
+        <p class="text-sm">At Home</p>
+      </div>
+    </div>
+    
+    <div class="flex flex-col w-full md:w-1/3 lg:w-1/5 text-center lg:text-start lg:pl-16">
+      <h4 class="font-bold text-lg mb-5">Resources</h4>
+      <div class="grid gap-y-4">
+        <p class="text-sm">Study with Kurtis</p>
+        <p class="text-sm">Blog</p>
+        <p class="text-sm">Kurtis Certified</p>
+        <p class="text-sm">Help Center</p>
+        <p class="text-sm">Library</p>
+        <p class="text-sm">Shop</p>
+        <p class="text-sm">Safety Center</p>
+      </div>
+    </div>
+    
+    <div class="flex flex-col w-full md:w-1/3 lg:w-1/5 text-center lg:text-start lg:pl-16">
+      <h4 class="font-bold text-lg mb-5">Terms and conditions</h4>
+      <div class="grid gap-y-4">
+        <p class="text-sm">Terms and Conditions</p>
+        <p class="text-sm">Privacy Policy</p>
+        <p class="text-sm">US Privacy Laws</p>
+        <p class="text-sm">Children's Privacy Policy</p>
+        <p class="text-sm">Inclusion and Accessibility policy</p>
+      </div>
+    </div>
+  </footer>
+  <div class="px-2 lg:px-20 pb-10 bg-zaffre text-white text-center lg:text-justify" >
+    <p>Copyright @ 2020, Kurtis All rights reserved.</p>
+  </div>
 </body>
 </html>
