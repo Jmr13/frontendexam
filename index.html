@@ -4,17 +4,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
+  <style type="text/css" media="all">
+    * {
+      border: 1px solid black;
+    }
+  </style>
 </head>
 <body class="text-gray-900">
   
   <nav class="flex flex-col lg:flex-row gap gap-y-5 justify-center lg:justify-between items-center mt-10 mb-16 px-2 md:px-14 lg:pl-10 lg:pr-20">
     <div class="flex w-full lg:w-auto justify-between">
       <img src="https://dummyimage.com/250x30/000/fff" alt="Logo" />
-      <p class="lg:hidden text-white py-2 px-3 bg-zaffre rounded-md text-center">&#9776;</p>
+      <button type="button" class="lg:hidden text-white py-2 px-3 bg-zaffre hover:bg-persian rounded-md text-center hamburger" onclick="navpop()">&#9776;</button>
     </div>
-    <div class="flex flex-col lg:flex-row gap gap-x-3 gap-y-3 justify-center lg:justify-end w-full">
-      <button type="button" class="text-white bg-zaffre rounded-md border-cobalt border-b-4 px-6 py-2">Sign up</button>
-      <button type="button" class="text-gray-500 rounded-md border-gray-300 border-2 px-6 py-2">Log in</button>
+    <div class="flex flex-col lg:flex-row gap gap-x-3 gap-y-3 hidden lg:flex justify-center lg:justify-end bg-gray-100 lg:bg-white rounded-md p-5 lg:p-0 w-full navpopup">
+      <button type="button" class="text-white bg-zaffre hover:bg-persian rounded-md border-cobalt border-b-4 px-6 py-2">Sign up</button>
+      <button type="button" class="text-gray-500 rounded-md border-gray-300 border-2 hover:bg-white hover:bg-gray-300 px-6 py-2">Log in</button>
     </div>
   </nav>
   
@@ -28,7 +33,7 @@
         Any subject, in any language, on any <br />
         device, for all ages!
       </p>
-      <button type="button" class="font-bold text-white bg-zaffre rounded-md w-full md:w-auto px-6 py-2 lg:px-14 lg:py-4 mb-10">
+      <button type="button" class="font-bold text-white bg-zaffre hover:bg-persian rounded-md w-full md:w-auto px-6 py-2 lg:px-14 lg:py-4 mb-10">
         Sign up for free
       </button>
       <p class="mb-3 text-sm font-bold">
@@ -46,11 +51,11 @@
   
   <div class="flex flex-col mt-10 mb-16 px-2 md:px-14 py-10 lg:px-20 w-full bg-gray-100">
     <h3 class="text-3xl font-bold mb-2 self-center">Who is Kurtis for?</h3>
-    <hr class="bg-zaffre h-2 w-24 self-center mb-14"/>
+    <hr class="bg-zaffre h-2 w-24 hover:w-full self-center mb-14"/>
     
     <div class="flex flex-wrap justify-between space-y-5 md:space-y-0 lg:space-x-5 mb-10">
       
-      <div class="flex flex-col text-center md:text-start w-full md:w-1/2 lg:w-1/5">
+      <div class="flex flex-col text-center lg:text-start w-full md:w-1/2 lg:w-1/5">
         <div class="mb-5 grow self-center">
           <img src="https://dummyimage.com/40x40/000/fff" alt="icon">
         </div>
@@ -63,7 +68,7 @@
         <p class="text-gray-700 font-bold">Learn more</p>
       </div>
       
-      <div class="flex flex-col text-center md:text-start w-full md:w-1/2 lg:w-1/5">
+      <div class="flex flex-col text-center lg:text-start w-full md:w-1/2 lg:w-1/5">
         <div class="mb-5 grow self-center">
           <img src="https://dummyimage.com/40x40/000/fff" alt="icon">
         </div>
@@ -105,7 +110,7 @@
     </div>
     
     <div class="flex justify-center">
-      <button type="button" class="text-white bg-zaffre rounded-md font-bold border-cobalt border-b-4 w-full md:w-auto px-6 py-2">SIGN UP NOW</button>
+      <button type="button" class="text-white bg-zaffre hover:bg-persian rounded-md font-bold border-cobalt border-b-4 w-full md:w-auto px-6 py-2">SIGN UP NOW</button>
     </div>
   </div>
   
@@ -143,8 +148,8 @@
     
     <div class="flex flex-col-reverse lg:flex-row justify-between mb-16">
       <div class="w-full lg:w-1/2 px-10 py-8">
-        <h1 class="text-3xl font-bold mb-2">Host or share</h1>
-        <p>
+        <h1 class="text-3xl font-bold mb-2 text-end">Host or share</h1>
+        <p class="text-end">
           Host a live game with questions <br />
           on a big screen or share a game <br />
           with remote players
@@ -195,7 +200,7 @@
     </div>
     <div class="w-full lg:w-1/2 lg:px-10 py-8 text-center lg:text-start">
       <h1 class="text-6xl font-bold mb-8">Ready for make learning fun!</h1>
-      <button type="button" class="text-white bg-zaffre rounded-md border-cobalt border-b-4 w-full md:w-auto px-6 py-2 mr-5">Sign up for free</button>
+      <button type="button" class="text-white bg-zaffre hover:bg-persian rounded-md border-cobalt border-b-4 w-full md:w-auto px-6 py-2 mr-5">Sign up for free</button>
     </div>
   </div>
   
@@ -283,5 +288,11 @@
   <div class="px-2 lg:px-20 pb-10 bg-zaffre text-white text-center lg:text-justify" >
     <p>Copyright @ 2020, Kurtis All rights reserved.</p>
   </div>
+  <script type="text/javascript" charset="utf-8">
+    /* Toggle Navbar */
+    function navpop() {
+      document.querySelector('.navpopup').classList.toggle("hidden")
+    }
+  </script>
 </body>
 </html>

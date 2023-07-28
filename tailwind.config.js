@@ -7,6 +7,7 @@ module.exports = {
         'zaffre': '#3A59FE',
         'cobalt': '#283FAA',
         'saffron': '#FEC43E',
+        'persian': '#0629E7'
       },
     }
   },
