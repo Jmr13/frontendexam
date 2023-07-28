@@ -4,11 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
-  <style type="text/css" media="all">
-    * {
-      border: 1px solid black;
-    }
-  </style>
 </head>
 <body class="text-gray-900">
   
@@ -292,6 +287,10 @@
     /* Toggle Navbar */
     function navpop() {
       document.querySelector('.navpopup').classList.toggle("hidden")
+    }
+    /* Cache assets */
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('serviceworker.js');
     }
   </script>
 </body>
